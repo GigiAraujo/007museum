@@ -1,3 +1,7 @@
+@font-face {
+    font-family: 'Inter';
+    src: url(fonte/Inter/Inter-VariableFont_opsz\,wght.ttf);
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +19,44 @@ body {
     height: auto;
 }
 
+.top-bar {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.rectangle {
+    width: 100%;
+    height: 70px; /* Ajuste a altura conforme necessário */
+    background-color: #262525;
+    margin-bottom: 10px; /* Espaçamento entre os retângulos */
+    position: relative; /* Necessário para posicionamento da imagem */
+}
+
+.top-image {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-height: 100%; /* Ajuste conforme necessário */
+    max-width: 100%; /* Ajuste conforme necessário */
+}
+
+.rectangle2 {
+    width: 100%;
+    height: 50px; /* Ajuste a altura conforme necessário */
+    background-color: #262525;
+    margin-bottom: 10px; /* Espaçamento entre os retângulos */
+}
+
 .content {
-  
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.content h2 {
+    font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
+    font-family: 'Inter';
 }
