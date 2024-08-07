@@ -5,7 +5,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Arial, sans-serif;
+    background-color: #F5F1F1;
 }
 
 .banner-container {
@@ -42,6 +42,55 @@ body {
     max-width: 100%; /* Ajuste conforme necessário */
 }
 
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: white;
+    margin: 0 35px;
+    font-size: 1.2em;
+    position: relative;
+    font-family: 'Inter';
+}
+
+.navbar img.divider {
+    margin: 0 15px; /* Adicione margem extra para criar o espaçamento desejado */
+}
+
+.navbar img.profile-icon {
+    margin: 0 5px; /* Reduzir a margem para aproximar o ícone da palavra Perfil */
+}
+
+.navbar .profile-link {
+    margin-left: 0; /* Remove a margem esquerda padrão */
+}
+
+.navbar a::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: red;
+    transition: width 0.3s;
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.navbar a:hover {
+    color: gray;
+}
+
+.navbar a:hover::after {
+    width: 100%;
+}
+
 .rectangle2 {
     width: 100%;
     height: 50px; /* Ajuste a altura conforme necessário */
@@ -59,4 +108,58 @@ body {
 .content h2 {
     font-size: 1.5em; /* Ajuste o tamanho da fonte conforme necessário */
     font-family: 'Inter';
+}
+
+.news-products {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 75px auto 20px;
+    max-width: 800px; /* Ajuste a largura máxima conforme necessário */
+
+}
+
+.news-title,
+.products-title {
+    font-size: 1.5em;
+    color: #990500;
+    padding: 10px;
+    font-family: 'Inter';
+    font-weight: bold;
+}
+
+.news-image {
+    max-width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin: 0 20px;
+}
+
+.carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+    overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+}
+
+.carousel-card {
+    flex: 0 0 30%;
+    max-width: 30%;
+    transition: transform 0.5s ease, opacity 0.5s ease;
+    opacity: 0.6;
+    text-align: center;
+    padding: 20px;
+    background-color: #ccc;
+    margin: 0 10px;
+    border-radius: 10px;
+}
+
+.carousel-card.active {
+    transform: scale(1.1);
+    opacity: 1;
 }
