@@ -129,7 +129,7 @@ body {
 }
 
 .news-image {
-    max-width: 70px; /* Ajuste o tamanho da imagem conforme necessário */
+    max-width: 55px; /* Ajuste o tamanho da imagem conforme necessário */
     height: auto;
     margin: 0 20px;
 }
@@ -152,14 +152,100 @@ body {
     max-width: 30%;
     transition: transform 0.5s ease, opacity 0.5s ease;
     opacity: 0.6;
-    text-align: center;
-    padding: 20px;
-    background-color: #ccc;
+    padding: 5px;
     margin: 0 10px;
+    border-radius: 10px;
+}
+
+.carousel-card img {
+    width: 100%;
     border-radius: 10px;
 }
 
 .carousel-card.active {
     transform: scale(1.1);
     opacity: 1;
+}
+
+.news-section {
+    background-color: #610300;
+    padding: 60px;
+    color: white;
+}
+
+.news-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 100px;
+    margin-left: 9%;
+}
+
+.news-header h2 {
+    margin: 0;
+    font-size: 24px;
+    margin-right: 10px;
+    font-family: 'Inter';
+}
+
+.news-header img.news-icon {
+    width: 40px;
+    height: 40px;
+}
+
+.news-content {
+    display: flex;
+    margin-left: 9%;
+}
+
+.news-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.news-item a {
+    display: block;
+    overflow: hidden; /* Para garantir que a imagem não ultrapasse os limites ao fazer zoom */
+}
+
+.news-image2 {
+    max-width: 300px;
+    height: 200px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease; /* Transição suave de zoom */
+}
+
+.news-image2:hover {
+    transform: scale(1.1); /* Zoom suave ao passar o mouse */
+}
+
+.divider-image {
+    width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.news-text {
+    max-width: 300px;
+    font-family: 'Inter';
+}
+
+.vertical-divider {
+    width: 2px;
+    height: 300px;
+    background-color: white;
+    margin: 0 50px;
+}
+
+.news-end-icon {
+    width: 70px;
+    height: 70px;
+    margin-left: 80%;
+    align-self: center;
+    transition: transform 0.3s ease; /* Transição suave para o ícone final */
+}
+
+.news-end-icon:hover {
+    transform: scale(1.1); /* Zoom suave ao passar o mouse no ícone final */
 }
