@@ -452,3 +452,136 @@ body {
     margin-right: 30px;
     color: #141414;
 }
+
+.franchise-section-bg {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.franchise-background-bg {
+    width: 100%;
+    height: 930px;
+    display: block;
+    margin-bottom: 100px;
+}
+
+.franchise-content-bg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%; /* Ajuste conforme necessário */
+}
+
+.franchise-images-bg {
+    display: flex;
+    justify-content: space-between;
+}
+
+.franchise-images-bg img {
+    max-width: 32%;
+    height: auto;
+    transition: transform 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.center-image-bg {
+    max-height: 40px; /* Altura específica para a imagem central */
+    max-width: 32%; /* Para manter a proporção semelhante às outras imagens */
+    transition: none;
+    margin-top: 230px; /* Ajuste conforme necessário para alinhar a imagem */
+}
+
+.franchise-images-bg img:not(.center-image-bg):hover {
+    transform: scale(1.05);
+}
+
+.franchise-texts-bg {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.text-item-bg {
+    max-width: 25%; /* Cada texto ocupa aproximadamente metade do espaço */
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-left: 40px;
+}
+
+.text-item2-bg {
+    max-width: 25%; /* Cada texto ocupa aproximadamente metade do espaço */
+    font-family: 'Inter';
+    font-size: 16px;
+    margin-right: 40px;
+}
+
+.footer {
+    background-color: #610300;
+    padding: 60px 0;
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-content {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 800px; /* Definido conforme a largura da imagem */
+    gap: 210px;
+}
+
+.logo {
+    width: 150px;
+    margin-right: 50px;
+}
+
+.contact-section {
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.contact-section h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-family: 'Inter';
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 400px; /* Definido conforme a necessidade */
+    margin-bottom: 15px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+}
+
+.contact-icon {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.contact-box {
+    border: 2px solid white;
+    padding: 5px 10px;
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+    border-radius: 15px;
+    font-family: 'Inter';
+}
+
+.contact-box:hover {
+    background-color: #8B0000; /* Vermelho mais claro */
+}
+
+/* Centraliza o conteúdo no meio da tela */
+.footer-content {
+    margin: 0 auto;
+}

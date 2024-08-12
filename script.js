@@ -17,6 +17,6 @@ document.addEventListener('DOMContentLoaded', () => {
         updateCarousel();
     }
 
-    setInterval(nextCard, 3000); // Muda de card a cada 3 segundos
+    setInterval(nextCard, 1500); // Muda de card a cada 3 segundos
     updateCarousel();
 });
