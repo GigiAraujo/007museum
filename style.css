@@ -600,7 +600,7 @@ body {
     align-items: center;
     width: 100%;
     max-width: 800px; /* Definido conforme a largura da imagem */
-    gap: 210px;
+    gap: 140px;
 }
 
 .logo {
@@ -618,11 +618,12 @@ body {
     font-size: 24px;
     margin-bottom: 20px;
     font-family: 'Inter';
+    margin-left: 28px;
 }
 
 .contact-info {
     display: flex;
-    justify-content: space-between;
+    /* justify-content: space-between; */
     width: 100%;
     max-width: 400px; /* Definido conforme a necessidade */
     margin-bottom: 15px;
@@ -631,10 +632,26 @@ body {
 .contact-item {
     display: flex;
     align-items: center;
+    margin-left: 20px;
 }
 
 .contact-icon {
     width: 40px;
+    margin-right: 10px;
+}
+
+.contact-icon2 {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.contact-icon3 {
+    width: 45px;
+    margin-right: 10px;
+}
+
+.contact-icon4 {
+    width: 50px;
     margin-right: 10px;
 }
 
@@ -643,8 +660,10 @@ body {
     padding: 5px 10px;
     transition: background-color 0.3s ease;
     cursor: pointer;
-    border-radius: 15px;
+    border-radius: 10px;
     font-family: 'Inter';
+    width: 130px;
+    text-align: center;
 }
 
 .contact-box:hover {
